@@ -177,9 +177,7 @@ svg {
   cursor: pointer;
   background: transparent;
   border: 0;
-  padding: 0.5em;
   width: 1.65rem;
-  aspect-ratio: 1;
 
   background-size: contain;
   background-repeat: no-repeat;
@@ -192,6 +190,21 @@ svg {
 
 .menu-nav-toggle[aria-expanded="true"]:after {
   content: "Cerrar";
+}
+
+.nav_contenido {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: fixed;
+  padding-top: 1em;
+  border: 1px solid green;
+  width: 90%;
+}
+
+.logo {
+  margin-right: auto;
+  z-index: 999;
 }
 
 /* clases de utilidad */
